@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-Swifty_noAuth2/Pods-Swifty_noAuth2-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework

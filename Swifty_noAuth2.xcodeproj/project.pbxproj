@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BF7B5A2527160257F9F3B8B /* Pods_Swifty_noAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE4A41176A30CE79CC0AC95 /* Pods_Swifty_noAuth2.framework */; };
+		BACC782823936D0900FD564A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC782723936D0900FD564A /* AppDelegate.swift */; };
+		BACC782A23936D0900FD564A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC782923936D0900FD564A /* SceneDelegate.swift */; };
+		BACC782C23936D0900FD564A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC782B23936D0900FD564A /* ContentView.swift */; };
+		BACC782E23936D0B00FD564A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BACC782D23936D0B00FD564A /* Assets.xcassets */; };
+		BACC783123936D0B00FD564A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BACC783023936D0B00FD564A /* Preview Assets.xcassets */; };
+		BACC783423936D0B00FD564A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BACC783223936D0B00FD564A /* LaunchScreen.storyboard */; };
+		BACC783C23936E2D00FD564A /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC783B23936E2D00FD564A /* UserInfoView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F06AA8C4713A718731CB09A /* Pods-Swifty_noAuth2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifty_noAuth2.release.xcconfig"; path = "Target Support Files/Pods-Swifty_noAuth2/Pods-Swifty_noAuth2.release.xcconfig"; sourceTree = "<group>"; };
+		21318DD9D13A32E59CB3EDF7 /* Pods-Swifty_noAuth2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifty_noAuth2.debug.xcconfig"; path = "Target Support Files/Pods-Swifty_noAuth2/Pods-Swifty_noAuth2.debug.xcconfig"; sourceTree = "<group>"; };
+		3CE4A41176A30CE79CC0AC95 /* Pods_Swifty_noAuth2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swifty_noAuth2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACC782423936D0900FD564A /* Swifty_noAuth2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swifty_noAuth2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACC782723936D0900FD564A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BACC782923936D0900FD564A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BACC782B23936D0900FD564A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BACC782D23936D0B00FD564A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BACC783023936D0B00FD564A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BACC783323936D0B00FD564A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BACC783523936D0B00FD564A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BACC783B23936E2D00FD564A /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BACC782123936D0900FD564A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BF7B5A2527160257F9F3B8B /* Pods_Swifty_noAuth2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		720F78A0DA9A12FFC9A8CC87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CE4A41176A30CE79CC0AC95 /* Pods_Swifty_noAuth2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FC46C2455770EE7002D9716 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21318DD9D13A32E59CB3EDF7 /* Pods-Swifty_noAuth2.debug.xcconfig */,
+				1F06AA8C4713A718731CB09A /* Pods-Swifty_noAuth2.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BACC781B23936D0900FD564A = {
+			isa = PBXGroup;
+			children = (
+				BACC782623936D0900FD564A /* Swifty_noAuth2 */,
+				BACC782523936D0900FD564A /* Products */,
+				7FC46C2455770EE7002D9716 /* Pods */,
+				720F78A0DA9A12FFC9A8CC87 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BACC782523936D0900FD564A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BACC782423936D0900FD564A /* Swifty_noAuth2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BACC782623936D0900FD564A /* Swifty_noAuth2 */ = {
+			isa = PBXGroup;
+			children = (
+				BACC782723936D0900FD564A /* AppDelegate.swift */,
+				BACC782923936D0900FD564A /* SceneDelegate.swift */,
+				BACC782B23936D0900FD564A /* ContentView.swift */,
+				BACC782D23936D0B00FD564A /* Assets.xcassets */,
+				BACC783B23936E2D00FD564A /* UserInfoView.swift */,
+				BACC783223936D0B00FD564A /* LaunchScreen.storyboard */,
+				BACC783523936D0B00FD564A /* Info.plist */,
+				BACC782F23936D0B00FD564A /* Preview Content */,
+			);
+			path = Swifty_noAuth2;
+			sourceTree = "<group>";
+		};
+		BACC782F23936D0B00FD564A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BACC783023936D0B00FD564A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BACC782323936D0900FD564A /* Swifty_noAuth2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BACC783823936D0B00FD564A /* Build configuration list for PBXNativeTarget "Swifty_noAuth2" */;
+			buildPhases = (
+				605AC62BEEEFE238F532D7F5 /* [CP] Check Pods Manifest.lock */,
+				BACC782023936D0900FD564A /* Sources */,
+				BACC782123936D0900FD564A /* Frameworks */,
+				BACC782223936D0900FD564A /* Resources */,
+				393FE85676A1EFBB316C791F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swifty_noAuth2;
+			productName = Swifty_noAuth2;
+			productReference = BACC782423936D0900FD564A /* Swifty_noAuth2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BACC781C23936D0900FD564A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Valeriia Muradian";
+				TargetAttributes = {
+					BACC782323936D0900FD564A = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = BACC781F23936D0900FD564A /* Build configuration list for PBXProject "Swifty_noAuth2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BACC781B23936D0900FD564A;
+			productRefGroup = BACC782523936D0900FD564A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BACC782323936D0900FD564A /* Swifty_noAuth2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BACC782223936D0900FD564A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACC783423936D0B00FD564A /* LaunchScreen.storyboard in Resources */,
+				BACC783123936D0B00FD564A /* Preview Assets.xcassets in Resources */,
+				BACC782E23936D0B00FD564A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		393FE85676A1EFBB316C791F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swifty_noAuth2/Pods-Swifty_noAuth2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swifty_noAuth2/Pods-Swifty_noAuth2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swifty_noAuth2/Pods-Swifty_noAuth2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		605AC62BEEEFE238F532D7F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Swifty_noAuth2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BACC782023936D0900FD564A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACC782823936D0900FD564A /* AppDelegate.swift in Sources */,
+				BACC782A23936D0900FD564A /* SceneDelegate.swift in Sources */,
+				BACC782C23936D0900FD564A /* ContentView.swift in Sources */,
+				BACC783C23936E2D00FD564A /* UserInfoView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BACC783223936D0B00FD564A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BACC783323936D0B00FD564A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BACC783623936D0B00FD564A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BACC783723936D0B00FD564A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BACC783923936D0B00FD564A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21318DD9D13A32E59CB3EDF7 /* Pods-Swifty_noAuth2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Swifty_noAuth2/Preview Content\"";
+				DEVELOPMENT_TEAM = Z53C49GQ68;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Swifty_noAuth2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.valerie.Swifty-noAuth2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BACC783A23936D0B00FD564A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F06AA8C4713A718731CB09A /* Pods-Swifty_noAuth2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Swifty_noAuth2/Preview Content\"";
+				DEVELOPMENT_TEAM = Z53C49GQ68;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Swifty_noAuth2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.valerie.Swifty-noAuth2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BACC781F23936D0900FD564A /* Build configuration list for PBXProject "Swifty_noAuth2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BACC783623936D0B00FD564A /* Debug */,
+				BACC783723936D0B00FD564A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BACC783823936D0B00FD564A /* Build configuration list for PBXNativeTarget "Swifty_noAuth2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BACC783923936D0B00FD564A /* Debug */,
+				BACC783A23936D0B00FD564A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BACC781C23936D0900FD564A /* Project object */;
+}
