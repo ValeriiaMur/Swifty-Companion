@@ -7,4 +7,6 @@ target 'Swifty_noAuth2' do
   # Pods for Swifty_noAuth2
 	pod 'SwiftyJSON'
   pod 'Alamofire'
+  pod 'AlamofireImage'
+  
 end

@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7BF7B5A2527160257F9F3B8B /* Pods_Swifty_noAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE4A41176A30CE79CC0AC95 /* Pods_Swifty_noAuth2.framework */; };
+		BA6FC3722394700200E7F135 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6FC3712394700200E7F135 /* UserModel.swift */; };
 		BACC782823936D0900FD564A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC782723936D0900FD564A /* AppDelegate.swift */; };
 		BACC782A23936D0900FD564A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC782923936D0900FD564A /* SceneDelegate.swift */; };
 		BACC782C23936D0900FD564A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC782B23936D0900FD564A /* ContentView.swift */; };
@@ -21,6 +22,7 @@
 		1F06AA8C4713A718731CB09A /* Pods-Swifty_noAuth2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifty_noAuth2.release.xcconfig"; path = "Target Support Files/Pods-Swifty_noAuth2/Pods-Swifty_noAuth2.release.xcconfig"; sourceTree = "<group>"; };
 		21318DD9D13A32E59CB3EDF7 /* Pods-Swifty_noAuth2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifty_noAuth2.debug.xcconfig"; path = "Target Support Files/Pods-Swifty_noAuth2/Pods-Swifty_noAuth2.debug.xcconfig"; sourceTree = "<group>"; };
 		3CE4A41176A30CE79CC0AC95 /* Pods_Swifty_noAuth2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swifty_noAuth2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6FC3712394700200E7F135 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		BACC782423936D0900FD564A /* Swifty_noAuth2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swifty_noAuth2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BACC782723936D0900FD564A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BACC782923936D0900FD564A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +60,6 @@
 				21318DD9D13A32E59CB3EDF7 /* Pods-Swifty_noAuth2.debug.xcconfig */,
 				1F06AA8C4713A718731CB09A /* Pods-Swifty_noAuth2.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -86,6 +87,7 @@
 				BACC782723936D0900FD564A /* AppDelegate.swift */,
 				BACC782923936D0900FD564A /* SceneDelegate.swift */,
 				BACC782B23936D0900FD564A /* ContentView.swift */,
+				BA6FC3712394700200E7F135 /* UserModel.swift */,
 				BACC782D23936D0B00FD564A /* Assets.xcassets */,
 				BACC783B23936E2D00FD564A /* UserInfoView.swift */,
 				BACC783223936D0B00FD564A /* LaunchScreen.storyboard */,
@@ -221,6 +223,7 @@
 				BACC782823936D0900FD564A /* AppDelegate.swift in Sources */,
 				BACC782A23936D0900FD564A /* SceneDelegate.swift in Sources */,
 				BACC782C23936D0900FD564A /* ContentView.swift in Sources */,
+				BA6FC3722394700200E7F135 /* UserModel.swift in Sources */,
 				BACC783C23936E2D00FD564A /* UserInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

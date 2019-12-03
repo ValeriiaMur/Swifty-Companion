@@ -7,27 +7,51 @@
 //
 
 import SwiftUI
+import SwiftyJSON
+import Alamofire
+import AlamofireImage
 
 struct UserInfoView: View {
+    @EnvironmentObject var user: User
+    
     var body: some View {
         VStack {
             Image("Background")
                 .edgesIgnoringSafeArea(.top)
-                .frame(width: 400.0, height: 200.0)
-            Image("ProfilePhoto")
-                .padding(.bottom, -20)
+                .frame(width: 400.0, height: 100.0)
+            if user.image != nil{
+                Image(uiImage: user.image!)
+                .padding()
+            }
+            else {
+                Text("")
+
+            }
             VStack(alignment: .leading)
             {
-                Text("Full Name")
-                    .font(.title)
+                HStack{
+                    Text(user.name)
+                        .font(.title)
+                    Text(user.lastname)
+                        .font(.title)
+                        
+                }
+                .padding()
                 HStack {
-                    Text("Level 1")
+                    Text(user.email)
                         .font(.subheadline)
                     Spacer()
-                    Text(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/)
+                    Text(user.intra)
+                    Spacer()
+                    if (user.level == 0)
+                    {
+                        Text("")
+                    } else {
+                        Text("Level: \(user.level)")
+                    }
                 }
+                .padding()
             }
-            .padding()
             Spacer()
         }
     }
