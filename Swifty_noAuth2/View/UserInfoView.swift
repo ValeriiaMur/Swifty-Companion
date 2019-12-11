@@ -11,9 +11,10 @@ import SwiftyJSON
 import Alamofire
 import AlamofireImage
 
+var active = true
+
 struct UserInfoView: View {
     @EnvironmentObject var user: User
-    
     var body: some View {
         VStack {
             Image("Background")
@@ -49,18 +50,31 @@ struct UserInfoView: View {
                     } else {
                         Text("Level: \(user.level)")
                     }
+                    if (user.intra.isEmpty)
+                    {
+                        Text("Not found")
+                    }
                 }
                 .padding()
             }
             Spacer()
             NavigationLink(destination: SkillsView()) {
                     Text("View Skills")
-            }
+                }
             .padding()
             .background(Color.gray)
             .foregroundColor(.white)
             .padding(10)
             .border(Color.gray, width: 5)
+        .padding()
+        NavigationLink(destination: ProjectsView()) {
+                Text("View Projects")
+        }
+        .padding()
+        .background(Color.gray)
+        .foregroundColor(.white)
+        .padding(10)
+        .border(Color.gray, width: 5)
         }
     }
 }

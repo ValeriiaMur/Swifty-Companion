@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7BF7B5A2527160257F9F3B8B /* Pods_Swifty_noAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE4A41176A30CE79CC0AC95 /* Pods_Swifty_noAuth2.framework */; };
+		BA38298C2399F3FF0043A9FB /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA38298B2399F3FF0043A9FB /* ProjectsView.swift */; };
 		BA52E788239607F0007C8E15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA52E787239607F0007C8E15 /* ViewController.swift */; };
 		BA52E78A23962224007C8E15 /* SkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA52E78923962224007C8E15 /* SkillsView.swift */; };
 		BA6FC3722394700200E7F135 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6FC3712394700200E7F135 /* UserModel.swift */; };
@@ -24,6 +25,7 @@
 		1F06AA8C4713A718731CB09A /* Pods-Swifty_noAuth2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifty_noAuth2.release.xcconfig"; path = "Target Support Files/Pods-Swifty_noAuth2/Pods-Swifty_noAuth2.release.xcconfig"; sourceTree = "<group>"; };
 		21318DD9D13A32E59CB3EDF7 /* Pods-Swifty_noAuth2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifty_noAuth2.debug.xcconfig"; path = "Target Support Files/Pods-Swifty_noAuth2/Pods-Swifty_noAuth2.debug.xcconfig"; sourceTree = "<group>"; };
 		3CE4A41176A30CE79CC0AC95 /* Pods_Swifty_noAuth2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swifty_noAuth2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA38298B2399F3FF0043A9FB /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		BA52E787239607F0007C8E15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA52E78923962224007C8E15 /* SkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsView.swift; sourceTree = "<group>"; };
 		BA6FC3712394700200E7F135 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				BACC782B23936D0900FD564A /* ContentView.swift */,
 				BACC783B23936E2D00FD564A /* UserInfoView.swift */,
 				BA52E78923962224007C8E15 /* SkillsView.swift */,
+				BA38298B2399F3FF0043A9FB /* ProjectsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			files = (
 				BA52E78A23962224007C8E15 /* SkillsView.swift in Sources */,
 				BA52E788239607F0007C8E15 /* ViewController.swift in Sources */,
+				BA38298C2399F3FF0043A9FB /* ProjectsView.swift in Sources */,
 				BACC782823936D0900FD564A /* AppDelegate.swift in Sources */,
 				BACC782A23936D0900FD564A /* SceneDelegate.swift in Sources */,
 				BACC782C23936D0900FD564A /* ContentView.swift in Sources */,

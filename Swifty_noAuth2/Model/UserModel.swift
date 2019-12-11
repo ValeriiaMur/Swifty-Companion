@@ -9,10 +9,10 @@
 import Foundation
 import SwiftUI
 import SwiftyJSON
-import Alamofire
 import AlamofireImage
 
 class User: ObservableObject {
+    @State var notFound: Bool = false
     @Published var name = ""
     @Published var lastname = ""
     @Published var email = ""
@@ -36,6 +36,14 @@ class User: ObservableObject {
          "Organization" : 0
     ]
     @Published var image = UIImage(named: "photo")
+    @Published var projects: [String: Bool]  = [:]
+//    @Published var projects :JSON = ""
+}
+
+struct Projects : Identifiable{
+    var id: Int
+    var name : String
+    var status : Int
 }
 
 

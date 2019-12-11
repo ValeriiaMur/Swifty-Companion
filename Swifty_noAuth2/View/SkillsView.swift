@@ -16,7 +16,7 @@ struct CapsuleBar: View {
     var capsuleColor: ColorRGB
     var body: some View {
         VStack {
-            
+
             Text("\(value)")
             ZStack(alignment: .bottom) {
                 Capsule()
@@ -30,7 +30,7 @@ struct CapsuleBar: View {
                     .frame(width: width, height: CGFloat(value) / CGFloat(maxValue) * 400)
                     .animation(.easeOut(duration: 0.5))
             }
-            
+
             Text("\(valueName)")
         }
     }
@@ -45,9 +45,9 @@ struct ColorRGB {
 struct SkillsView: View {
     @EnvironmentObject var user: User
     private var data: [String: [Int]] = [
-         "Data1": [0],
-         "Data2": [6, 7, 8, 9, 10],
-         "Data3": [28, 25, 30, 29, 23],
+         "Data1": [30, 30, 30, 30, 30],
+         "Data2": [30, 30, 30, 30, 30],
+         "Data3": [30, 30, 30, 30, 30],
     ]
     @State private var dataPicker: String = "Data1"
     private var dataBackgroundColor: [String: ColorRGB] = [
@@ -60,12 +60,6 @@ struct SkillsView: View {
         "Data2": ColorRGB(red: 42 / 255, green: 74 / 255, blue: 150 / 255),
         "Data3": ColorRGB(red: 47 / 255, green: 57 / 255, blue: 77 / 255)
     ]
-    mutating func update(data : NSDictionary)
-    {
-        print(self.data)
-        self.data["Data1"]![0] = self.user.data["Company experience"]!
-        self.data["Data2"]![1] = self.user.data["Algorithms & AI"]!
-    }
     var body: some View {
         ZStack {
             Color(.sRGB,
@@ -86,7 +80,18 @@ struct SkillsView: View {
                           Text("Skills3").tag("Data3")
                       }.pickerStyle(SegmentedPickerStyle())
                       .padding()
-                    CapsuleGraphView(data: data[dataPicker]!, maxValueInData: data[dataPicker]!.max()!, spacing: 24, capsuleColor: dataBarColor[dataPicker]!)
+                    if (dataPicker == "Data1")
+                    {
+                      CapsuleGraphView(data: data[dataPicker]!, maxValueInData: data[dataPicker]!.max()!, spacing: 24, capsuleColor: dataBarColor[dataPicker]!)
+                    }
+                    else if (dataPicker == "Data2")
+                    {
+                        CapsuleGraphView2(data: data[dataPicker]!, maxValueInData: data[dataPicker]!.max()!, spacing: 24, capsuleColor: dataBarColor[dataPicker]!)
+                    }
+                    else if (dataPicker == "Data3")
+                    {
+                        CapsuleGraphView3(data: data[dataPicker]!, maxValueInData: data[dataPicker]!.max()!, spacing: 24, capsuleColor: dataBarColor[dataPicker]!)
+                    }
                  }
              }
          }
@@ -98,51 +103,35 @@ struct CapsuleGraphView: View {
     var maxValueInData: Int
     var spacing: CGFloat
     var capsuleColor: ColorRGB
-    
 
-//    self.user.data["Imperative programming"] = json["cursus_users"][0]["skills"][6]["level"].int!
-//    self.user.data["Unix"] = json["cursus_users"][0]["skills"][7]["level"].int!
-//    self.user.data["Object-oriented programming"] = json["cursus_users"][0]["skills"][8]["level"].int!
-//    self.user.data["Web"] = json["cursus_users"][0]["skills"][9]["level"].int!
-//    self.user.data["Network & system administration"] = json["cursus_users"][0]["skills"][10]["level"].int!
-//    self.user.data["DB & Data"] = json["cursus_users"][0]["skills"][11]["level"].int!
-//    self.user.data["Technology integration"] = json["cursus_users"][0]["skills"][12]["level"].int!
-//    self.user.data["Security"] = json["cursus_users"][0]["skills"][13]["level"].int!
-//    self.user.data["Organization"] = json["cursus_users"][0]["skills"][14]["level"].int!
-    
     var body: some View {
         GeometryReader { geometry in
             HStack {
-                CapsuleBar(value: self.data[0],
-                    //self.user.data["Company experience"]!,
+                CapsuleBar(value: self.user.data["Company experience"]!,
                            maxValue: self.maxValueInData,
                            width: (CGFloat(geometry.size.width) - 8          * self.spacing) / CGFloat(self.data.count),
                            valueName: "Company",
                            capsuleColor: self.capsuleColor
                  )
-                CapsuleBar(value: self.data[1],
-                    //self.user.data["Algorithms & AI"]!,
+                CapsuleBar(value: self.user.data["Algorithms & AI"]!,
                            maxValue: self.maxValueInData,
                            width: (CGFloat(geometry.size.width) - 8 * self.spacing) / CGFloat(self.data.count),
-                           valueName: "AI",
+                           valueName: "Algorithms",
                            capsuleColor: self.capsuleColor
                  )
-                 CapsuleBar(value: self.data[2],
-                    //self.user.data["Adaptation & creativity"]!,
+                 CapsuleBar(value: self.user.data["Adaptation & creativity"]!,
                            maxValue: self.maxValueInData,
                            width: (CGFloat(geometry.size.width) - 8 * self.spacing) / CGFloat(self.data.count),
                            valueName: "Creativity",
                            capsuleColor: self.capsuleColor
                  )
-                 CapsuleBar(value: self.data[3],
-                    //self.user.data["Graphics"]!,
+                 CapsuleBar(value: self.user.data["Graphics"]!,
                            maxValue: self.maxValueInData,
                            width: (CGFloat(geometry.size.width) - 8 * self.spacing) / CGFloat(self.data.count),
                            valueName: "Graphics",
                            capsuleColor: self.capsuleColor
                  )
-                 CapsuleBar(value: self.data[4],
-                    //self.user.data["Rigor"]!,
+                 CapsuleBar(value: self.user.data["Rigor"]!,
                            maxValue: self.maxValueInData,
                            width: (CGFloat(geometry.size.width) - 8 * self.spacing) / CGFloat(self.data.count),
                            valueName: "Rigor",
@@ -150,7 +139,96 @@ struct CapsuleGraphView: View {
                  )
             }
         }.frame(height: 500)
-        
+    }
+}
+
+struct CapsuleGraphView2: View {
+    @EnvironmentObject var user: User
+    var data: [Int]
+    var maxValueInData: Int
+    var spacing: CGFloat
+    var capsuleColor: ColorRGB
+
+    var body: some View {
+        GeometryReader { geometry in
+            HStack {
+                CapsuleBar(value: self.user.data["Imperative programming"]!,
+                           maxValue: self.maxValueInData,
+                           width: (CGFloat(geometry.size.width) - 8          * self.spacing) / CGFloat(self.data.count),
+                           valueName: "Imperative",
+                           capsuleColor: self.capsuleColor
+                 )
+                CapsuleBar(value: self.user.data["Unix"]!,
+                           maxValue: self.maxValueInData,
+                           width: (CGFloat(geometry.size.width) - 8 * self.spacing) / CGFloat(self.data.count),
+                           valueName: "Unix",
+                           capsuleColor: self.capsuleColor
+                 )
+                 CapsuleBar(value: self.user.data["Object-oriented programming"]!,
+                           maxValue: self.maxValueInData,
+                           width: (CGFloat(geometry.size.width) - 8 * self.spacing) / CGFloat(self.data.count),
+                           valueName: "Object-oriented",
+                           capsuleColor: self.capsuleColor
+                 )
+                 CapsuleBar(value: self.user.data["Web"]!,
+                           maxValue: self.maxValueInData,
+                           width: (CGFloat(geometry.size.width) - 8 * self.spacing) / CGFloat(self.data.count),
+                           valueName: "Web",
+                           capsuleColor: self.capsuleColor
+                 )
+                 CapsuleBar(value: self.user.data["Network & system administration"]!,
+                           maxValue: self.maxValueInData,
+                           width: (CGFloat(geometry.size.width) - 8 * self.spacing) / CGFloat(self.data.count),
+                           valueName: "Network",
+                           capsuleColor: self.capsuleColor
+                 )
+            }
+        }.frame(height: 500)
+    }
+}
+
+struct CapsuleGraphView3: View {
+    @EnvironmentObject var user: User
+    var data: [Int]
+    var maxValueInData: Int
+    var spacing: CGFloat
+    var capsuleColor: ColorRGB
+    
+    var body: some View {
+        GeometryReader { geometry in
+            HStack {
+                CapsuleBar(value: self.user.data["DB & Data"]!,
+                           maxValue: self.maxValueInData,
+                           width: (CGFloat(geometry.size.width) - 8          * self.spacing) / CGFloat(self.data.count),
+                           valueName: "DB&Data",
+                           capsuleColor: self.capsuleColor
+                 )
+                CapsuleBar(value: self.user.data["Technology integration"]!,
+                           maxValue: self.maxValueInData,
+                           width: (CGFloat(geometry.size.width) - 8 * self.spacing) / CGFloat(self.data.count),
+                           valueName: "Integration",
+                           capsuleColor: self.capsuleColor
+                 )
+                 CapsuleBar(value: self.user.data["Security"]!,
+                           maxValue: self.maxValueInData,
+                           width: (CGFloat(geometry.size.width) - 8 * self.spacing) / CGFloat(self.data.count),
+                           valueName: "Security",
+                           capsuleColor: self.capsuleColor
+                 )
+                 CapsuleBar(value: self.user.data["Organization"]!,
+                           maxValue: self.maxValueInData,
+                           width: (CGFloat(geometry.size.width) - 8 * self.spacing) / CGFloat(self.data.count),
+                           valueName: "Organization",
+                           capsuleColor: self.capsuleColor
+                 )
+                 CapsuleBar(value: self.user.data["Group & interpersonal"]!,
+                           maxValue: self.maxValueInData,
+                           width: (CGFloat(geometry.size.width) - 8 * self.spacing) / CGFloat(self.data.count),
+                           valueName: "Group",
+                           capsuleColor: self.capsuleColor
+                 )
+            }
+        }.frame(height: 500)
     }
 }
 

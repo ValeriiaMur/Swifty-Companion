@@ -8,5 +8,6 @@ target 'Swifty_noAuth2' do
 	pod 'SwiftyJSON'
   pod 'Alamofire'
   pod 'AlamofireImage'
+  pod 'MappingAce'
   
 end
