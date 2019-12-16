@@ -40,10 +40,9 @@ class User: ObservableObject {
 //    @Published var projects :JSON = ""
 }
 
-struct Projects : Identifiable{
-    var id: Int
-    var name : String
-    var status : Int
-}
+//struct Projects {
+//    var name : String
+//    var status : Int
+//}
 
 

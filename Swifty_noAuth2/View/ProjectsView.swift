@@ -11,34 +11,37 @@ import SwiftyJSON
 import Alamofire
 import AlamofireImage
 
+struct Projects {
+    var name : String
+    var status : Int
+}
 
 
 struct ProjectRow: View {
     @EnvironmentObject var user: User
+//    @State var all_proj = user.projects
 
     var body: some View {
         HStack {
-            Text("BO")
+            Text("Hello world!")
         }
     }
 }
 
-struct ProjectsView: View {
-    @EnvironmentObject var user: User
-
-    var body: some View {
-        HStack {
-            Text("BABA")
-            VStack {
-                ForEach(user.projects, id: \.self){ project in
-                    Text("\($project)")
-                }
-
-                Text("Ready or not, here I come!")
-            }
-        }
-    }
-}
+//struct ProjectsView: View {
+//    @EnvironmentObject var user: User
+//
+//    var body: some View {
+//        HStack {
+////            Text("BABA")
+////            VStack {
+//////                ForEach(user.projects, id: \.self){ project in
+//////                    Text("\($project)")
+//////                }
+////            }
+//        }
+//    }
+//}
 
 struct ProjectsView_Previews: PreviewProvider {
     static var previews: some View {

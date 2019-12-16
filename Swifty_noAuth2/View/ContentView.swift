@@ -94,7 +94,7 @@ struct ContentView: View {
                  }
              }
         }
-        
+        print(self.user.projects)
 //        let jsonArray = json["projects_users"].array
 //        user.projects[0] = jsonArray![0]["project"]["name"].string as Any
 //        if let userName = jsonArray![0]["project"]["name"].string {
